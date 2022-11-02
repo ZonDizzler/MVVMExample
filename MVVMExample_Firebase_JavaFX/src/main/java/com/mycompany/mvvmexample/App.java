@@ -15,10 +15,10 @@ import javafx.stage.Stage;
  */
 public class App extends Application {
    public static Firestore fstore;
-    private final FirestoreContext contxtFirebase = new FirestoreContext();
+    private final FirestoreContext contextFirebase = new FirestoreContext();
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-                fstore = contxtFirebase.firebase();
+                fstore = contextFirebase.firebase();
 
 		Parent login = FXMLLoader.load(getClass().getResource("AccessFBView.fxml"));
 		Scene scene = new Scene(login);
